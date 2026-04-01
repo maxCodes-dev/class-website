@@ -1,3 +1,4 @@
+@import url(./tw-palette.css);
 /* @import url("@react-aria/example-theme");
  */
 :root {
@@ -6,7 +7,8 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  --text: rgba(255, 255, 255, 0.87);
+  color: var(--text);
   --background-color: #242424;
   background-color: var(--background-color);
 
@@ -108,7 +110,7 @@ hgroup p:last-of-type {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
+    --text: #213547;
     --background-color: #ffffff;
   }
   a:hover {

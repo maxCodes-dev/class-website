@@ -11,6 +11,8 @@ import "./reset.css";
 import "./index.css";
 import "./app.css";
 
+import Header from "./components/Header";
+
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
@@ -44,6 +46,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 export default function App() {
   return (
     <>
+      <Header />
       <main>
         <Outlet />
       </main>

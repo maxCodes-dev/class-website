@@ -1,0 +1,18 @@
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+
+  background-color: var(--color-red-600);
+  color: var(--color-white);
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+header a {
+  color: inherit;
+  font-weight: inherit;
+}
