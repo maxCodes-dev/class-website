@@ -7,7 +7,7 @@ export function meta({}: Route.MetaArgs) {
   ];
 }
 
-export default function Home() {
+export function ServerComponent() {
   return (
     <>
       <hgroup>
