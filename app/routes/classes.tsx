@@ -1,6 +1,6 @@
 import type { Route } from "./+types/classes";
 
-import ramsLogo from "@/assets/rams-logo.jpeg";
+// import ramsLogo from "@/assets/rams-logo.jpeg";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -16,10 +16,11 @@ export function meta({}: Route.MetaArgs) {
 export function ServerComponent() {
   return (
     <>
-      <img src={ramsLogo} />
-      <hgroup>
-        <h1>Class Resources</h1>
-      </hgroup>
+      <section id="page-top">
+        <hgroup>
+          <h1>Classes</h1>
+        </hgroup>
+      </section>
     </>
   );
 }
