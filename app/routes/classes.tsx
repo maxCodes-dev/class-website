@@ -1,5 +1,7 @@
 import type { Route } from "./+types/classes";
 
+import classes from "@/../mock/classes";
+
 // import ramsLogo from "@/assets/rams-logo.jpeg";
 
 export function meta({}: Route.MetaArgs) {
@@ -14,6 +16,9 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export function ServerComponent() {
+  const eighthAssignments = classes["8th"].assignments.map((assignment) => (
+    <li>{assignment.name}</li>
+  ));
   return (
     <>
       <section id="page-top">
@@ -21,6 +26,9 @@ export function ServerComponent() {
           <h1>Classes</h1>
         </hgroup>
       </section>
+      <h2>8th Grade</h2>
+      <h3>Assignments</h3>
+      <ol>{eighthAssignments}</ol>
     </>
   );
 }

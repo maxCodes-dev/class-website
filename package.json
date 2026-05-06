@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "class-website",
   "private": true,
   "type": "module",
   "scripts": {
@@ -11,6 +11,7 @@
   "dependencies": {
     "@react-router/serve": "7.13.2",
     "@remix-run/node-fetch-server": "0.13.0",
+    "lucide": "^1.14.0",
     "react": "^19.2.4",
     "react-aria-components": "^1.16.0",
     "react-dom": "^19.2.4",

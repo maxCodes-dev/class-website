@@ -2,8 +2,6 @@ import type { Route } from "./+types/index";
 
 // import ramsLogo from "@/assets/rams-logo.jpeg";
 
-import "./index.css";
-
 export function meta({}: Route.MetaArgs) {
   return [
     { title: "Home | RAMS Computer Science" },
